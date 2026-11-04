@@ -1,9 +1,16 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://th3rdgroup-web.pages.dev https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self' https://th3rdgroup-web.pages.dev; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://th3rdgroup-web.pages.dev https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self' https://th3rdgroup-web.pages.dev; frame-ancestors 'none'; upgrade-insecure-requests
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+
+# Public editions enforce their own restrictive meta CSP, including no API calls.
+# Remove parent-only headers that otherwise prevent the intended inline demo.
+/showcase/*
+  ! Content-Security-Policy
+  ! X-Frame-Options
+  X-Robots-Tag: noindex
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable

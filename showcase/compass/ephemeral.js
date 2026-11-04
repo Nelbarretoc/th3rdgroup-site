@@ -1,0 +1,1 @@
+for(const name of ['localStorage','sessionStorage']){const data=new Map();Object.defineProperty(window,name,{value:{getItem:k=>data.get(String(k))??null,setItem:(k,v)=>data.set(String(k),String(v)),removeItem:k=>data.delete(String(k)),clear:()=>data.clear(),key:i=>[...data.keys()][i]??null,get length(){return data.size}}});}
