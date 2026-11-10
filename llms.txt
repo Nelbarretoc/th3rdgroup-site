@@ -1,21 +1,42 @@
 # TH3RD GROUP
 
-> TH3RD GROUP is a strategy, technology and execution company for consumer brands and growing businesses. We connect direction with the systems and hands-on execution required to enter markets, operate ecommerce channels and improve business workflows with responsible automation and AI.
+TH3RD GROUP LLC is a strategy, technology and execution company for consumer brands and growing businesses. The company works in English and Spanish. Services are scoped to the business objective, evidence and responsibilities agreed for the engagement.
 
 Canonical website: https://th3rdgroup.com/
 Spanish website: https://th3rdgroup.com/es/
+Services: https://th3rdgroup.com/solutions/
+Servicios: https://th3rdgroup.com/es/soluciones/
 Contact: hello@th3rdgroup.com
 
 ## Services
 
-- U.S. market entry consulting: https://th3rdgroup.com/solutions/us-market-entry/
-- Estrategia para vender en Estados Unidos: https://th3rdgroup.com/es/soluciones/entrada-mercado-estados-unidos/
-- Ecommerce operations consulting for Amazon, Walmart.com, TikTok Shop, Mercado Libre and Shopify: https://th3rdgroup.com/solutions/ecommerce-operations/
-- Consultoría y operaciones de ecommerce: https://th3rdgroup.com/es/soluciones/operaciones-ecommerce/
-- Market readiness assessment for product, label, documentation and channel questions: https://th3rdgroup.com/solutions/market-readiness/
-- Diagnóstico de preparación para nuevos mercados: https://th3rdgroup.com/es/soluciones/preparacion-mercado/
-- AI consulting, business automation and operational transformation: https://th3rdgroup.com/solutions/ai-transformation/
-- Consultoría en IA y automatización para empresas: https://th3rdgroup.com/es/soluciones/transformacion-ia/
+- CRM setup & lead follow-up: https://th3rdgroup.com/solutions/crm-setup/
+- CRM y seguimiento de clientes: https://th3rdgroup.com/es/soluciones/crm-personalizado/
+
+- Business process automation: https://th3rdgroup.com/solutions/business-process-automation/
+- Automatización de procesos: https://th3rdgroup.com/es/soluciones/automatizacion-procesos/
+
+- Business website design: https://th3rdgroup.com/solutions/business-website-design/
+- Diseño web para empresas: https://th3rdgroup.com/es/soluciones/diseno-web-empresas/
+
+- Amazon, TikTok Shop & ecommerce: https://th3rdgroup.com/solutions/ecommerce-operations/
+- Amazon, TikTok Shop y ecommerce: https://th3rdgroup.com/es/soluciones/operaciones-ecommerce/
+
+- U.S. market entry: https://th3rdgroup.com/solutions/us-market-entry/
+- Entrada al mercado de Estados Unidos: https://th3rdgroup.com/es/soluciones/entrada-mercado-estados-unidos/
+
+- Product & market readiness: https://th3rdgroup.com/solutions/market-readiness/
+- Preparación de producto y mercado: https://th3rdgroup.com/es/soluciones/preparacion-mercado/
+
+- AI-assisted workflows: https://th3rdgroup.com/solutions/ai-transformation/
+- Procesos con inteligencia artificial: https://th3rdgroup.com/es/soluciones/transformacion-ia/
+
+## TH3RD Compass
+
+Compass supports product research, source evidence, market readiness, commercial relationships and follow-up work. Its public interactive reports use fictional data; they are not client records, regulatory approvals or measured commercial outcomes. Operational access, source records and human review require an agreed scope.
+
+English: https://th3rdgroup.com/compass/
+Español: https://th3rdgroup.com/es/compass/
 
 ## Practical resources
 
@@ -26,6 +47,8 @@ Contact: hello@th3rdgroup.com
 
 ## Scope boundaries
 
-TH3RD GROUP does not claim to represent retailers and does not guarantee placement, distribution, regulatory approval or commercial outcomes. Market-readiness work is preliminary and does not replace qualified legal or regulatory advice.
+Audits, sprints and fractional support are engagement formats, not additional services. Market-entry planning covers the commercial path; product and market readiness reviews product, packaging and document evidence. Conventional workflow automation and AI-assisted tasks are distinct choices; AI requires defined sources and human review.
 
-For a fuller, factual service summary, see https://th3rdgroup.com/llms-full.txt
+TH3RD GROUP does not claim to represent retailers and does not guarantee placement, distribution, regulatory approval, compliance or commercial outcomes. Market-readiness work is preliminary and does not replace qualified legal, regulatory, laboratory or certification advice. Channel availability and responsibilities must be confirmed for the specific market.
+
+Full reference: https://th3rdgroup.com/llms-full.txt

@@ -1,48 +1,94 @@
 # TH3RD GROUP — service and entity reference
 
-## Company
+TH3RD GROUP LLC is a strategy, technology and execution company for consumer brands and growing businesses. The company works in English and Spanish. Services are scoped to the business objective, evidence and responsibilities agreed for the engagement.
 
-TH3RD GROUP LLC is a strategy, technology and execution company serving consumer brands and growing businesses. The company works in English and Spanish. Its role is to organize commercial direction, operating systems and coordinated delivery so teams can move from opportunity to measurable execution.
-
-Website: https://th3rdgroup.com/
-Spanish: https://th3rdgroup.com/es/
+Canonical website: https://th3rdgroup.com/
+Spanish website: https://th3rdgroup.com/es/
+Services: https://th3rdgroup.com/solutions/
+Servicios: https://th3rdgroup.com/es/soluciones/
 Contact: hello@th3rdgroup.com
 
-## U.S. market entry consulting
+## CRM setup & lead follow-up
 
-TH3RD GROUP helps consumer and CPG brands prepare to sell in the United States. Work can include market and category framing, customer and geographic priorities, channel strategy, marketplace and retail pathways, operating readiness, launch planning, decision gates and cross-functional coordination. Engagements can begin with a market-entry assessment, a launch-planning sprint or fractional execution leadership.
+Structure customer records, sales stages and responsibility for each follow-up.
 
-English: https://th3rdgroup.com/solutions/us-market-entry/
-Español: https://th3rdgroup.com/es/soluciones/entrada-mercado-estados-unidos/
+CRM y seguimiento de clientes: Organiza contactos, etapas comerciales y responsables del seguimiento.
 
-## Ecommerce operations consulting
+English: https://th3rdgroup.com/solutions/crm-setup/
+Español: https://th3rdgroup.com/es/soluciones/crm-personalizado/
 
-TH3RD GROUP helps brands design and operate ecommerce channels across Amazon, Walmart.com Marketplace, TikTok Shop, Mercado Libre, Shopify and direct-to-consumer models. Work can connect channel roles, catalog and content, inventory, campaigns, customer signals, reporting, workflows, automation, ownership and decision cadences. Engagements can begin with a channel operations audit, an ecommerce operations sprint or fractional channel leadership.
+## Business process automation
+
+Route information and recurring tasks between your existing business tools.
+
+Automatización de procesos: Conecta tus herramientas para mover información y atender tareas repetitivas.
+
+English: https://th3rdgroup.com/solutions/business-process-automation/
+Español: https://th3rdgroup.com/es/soluciones/automatizacion-procesos/
+
+## Business website design
+
+Build or improve a clear website connected to your inquiry workflow.
+
+Diseño web para empresas: Crea o mejora tu sitio y conecta las consultas con el seguimiento comercial.
+
+English: https://th3rdgroup.com/solutions/business-website-design/
+Español: https://th3rdgroup.com/es/soluciones/diseno-web-empresas/
+
+## Amazon, TikTok Shop & ecommerce
+
+Plan setup, listings and ongoing operations for your selected channels.
+
+Amazon, TikTok Shop y ecommerce: Organiza la apertura, las publicaciones y la operación de tus canales.
 
 English: https://th3rdgroup.com/solutions/ecommerce-operations/
 Español: https://th3rdgroup.com/es/soluciones/operaciones-ecommerce/
 
-## Market readiness assessment
+## U.S. market entry
 
-TH3RD GROUP provides a preliminary, source-backed review of product context, labels, documentation and channel questions before a brand enters a target country or growth channel. The Country Readiness Report separates evidence, observations, open questions, priorities and areas that may require qualified specialist review. It is not a legal opinion, official approval, certification or guaranteed compliance determination.
+Build the commercial market case, channel strategy and launch roadmap.
+
+Entrada al mercado de Estados Unidos: Define la oportunidad comercial, la estrategia de canales y el plan de lanzamiento.
+
+English: https://th3rdgroup.com/solutions/us-market-entry/
+Español: https://th3rdgroup.com/es/soluciones/entrada-mercado-estados-unidos/
+
+## Product & market readiness
+
+Review product, packaging and document evidence—not the commercial launch plan.
+
+Preparación de producto y mercado: Revisa evidencia de producto, empaque y documentos; no reemplaza el plan comercial.
 
 English: https://th3rdgroup.com/solutions/market-readiness/
 Español: https://th3rdgroup.com/es/soluciones/preparacion-mercado/
 
-## AI consulting and business automation
+## AI-assisted workflows
 
-TH3RD GROUP helps companies identify, build and adopt practical AI and automation systems around defined workflows, decisions and customer outcomes. Work can include workflow diagnosis, use-case prioritization, process redesign, integrations, conventional automation, AI-assisted capabilities, human review, permissions, governance, training and measurement. TH3RD GROUP does not recommend AI when a simpler and more dependable process or automation is the better answer.
+Apply AI to research, document interpretation or drafting that needs human review.
+
+Procesos con inteligencia artificial: Aplica IA a investigación, interpretación de documentos o borradores, con revisión humana.
 
 English: https://th3rdgroup.com/solutions/ai-transformation/
 Español: https://th3rdgroup.com/es/soluciones/transformacion-ia/
 
-## Decision resources
+## TH3RD Compass
 
-Market-entry readiness guide: https://th3rdgroup.com/insights/market-entry-readiness/
-Guía de preparación para entrar a un mercado: https://th3rdgroup.com/es/recursos/preparacion-entrada-mercado/
-Ecommerce operating control map: https://th3rdgroup.com/insights/ecommerce-operating-control-map/
-Mapa de controles para operaciones de ecommerce: https://th3rdgroup.com/es/recursos/mapa-controles-ecommerce/
+Compass supports product research, source evidence, market readiness, commercial relationships and follow-up work. Its public interactive reports use fictional data; they are not client records, regulatory approvals or measured commercial outcomes. Operational access, source records and human review require an agreed scope.
 
-## Commercial and professional boundaries
+English: https://th3rdgroup.com/compass/
+Español: https://th3rdgroup.com/es/compass/
 
-TH3RD GROUP does not claim to represent Amazon, Walmart or other retailers and does not guarantee placement, distribution or commercial outcomes. Market-readiness services are preliminary advisory work and do not replace qualified legal, regulatory, laboratory or certification professionals. Specialized support may be required depending on the product, market, channel and risk profile.
+## Practical resources
+
+- Market-entry readiness guide: https://th3rdgroup.com/insights/market-entry-readiness/
+- Guía de preparación para entrar a un mercado: https://th3rdgroup.com/es/recursos/preparacion-entrada-mercado/
+- Ecommerce operating control map: https://th3rdgroup.com/insights/ecommerce-operating-control-map/
+- Mapa de controles para operaciones de ecommerce: https://th3rdgroup.com/es/recursos/mapa-controles-ecommerce/
+
+## Scope boundaries
+
+Audits, sprints and fractional support are engagement formats, not additional services. Market-entry planning covers the commercial path; product and market readiness reviews product, packaging and document evidence. Conventional workflow automation and AI-assisted tasks are distinct choices; AI requires defined sources and human review.
+
+TH3RD GROUP does not claim to represent retailers and does not guarantee placement, distribution, regulatory approval, compliance or commercial outcomes. Market-readiness work is preliminary and does not replace qualified legal, regulatory, laboratory or certification advice. Channel availability and responsibilities must be confirmed for the specific market.
+
+Service navigation and this reference are generated from the same canonical service definitions.
