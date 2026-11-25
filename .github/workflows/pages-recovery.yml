@@ -1,6 +1,6 @@
-# Publish the VPS-tested TH3RD growth artifact without rebuilding it.
+# Publish the VPS-tested TH3RD readiness and U.S. entry artifact without rebuilding it.
 # Manual dispatch only. No rebuild, DNS change or new saved credential.
-name: Publish verified TH3RD growth artifact
+name: Publish verified TH3RD readiness and U.S. entry artifact
 
 on:
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
       - name: Check out the exact VPS-tested static artifact
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, checked 2026-11-24
         with:
-          ref: d39f761bdb76e5b7d68e737a7d4c2aa888f14fac
+          ref: c1bdb781fb1d1ec438774e4833a6adba4b19f409
           path: site
           persist-credentials: false
 
@@ -51,7 +51,7 @@ jobs:
           assert(!paths.some(p => p === '.github' || p.startsWith('.github/')),
             'Frozen payload unexpectedly contains workflow metadata');
           assert.equal(readFileSync(`${root}/deployment.txt`, 'utf8').trim(),
-            '00a3ac9755ce55dd953d73e00a388d3136368311');
+            '6bda83fe5a8e0c672f88f7ccc93007d41c842b90');
           assert.equal(readFileSync(`${root}/CNAME`, 'utf8').trim(), 'th3rdgroup.com');
           assert(paths.includes('index.html') && paths.includes('.nojekyll'));
           const payload = paths.filter(p => p !== 'deployment.txt');
@@ -61,7 +61,7 @@ jobs:
             digest.update(p).update('\0').update(readFileSync(`${root}/${p}`)).update('\0');
           }
           assert.equal(digest.digest('hex'),
-            '5dd73b33780c3a01f7da196b24c17becad1a9968d0a476d3c6a4612f7efe1514');
+            '6134d27e0c01407d1e50201a7c35d8881422c6fdeb499b0fa461fb8393bcf360');
           console.log('PASS: 284 frozen files, application marker and domain match');
           NODE
 
