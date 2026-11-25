@@ -1,0 +1,81 @@
+# One-off recovery of the VPS-tested TH3RD artifact; owner authorized continuation.
+# Manual dispatch only. No rebuild, DNS change or new saved credential.
+name: Publish verified TH3RD recovery artifact
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'Nelbarretoc/th3rdgroup-site' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the exact VPS-tested static artifact
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, checked 2026-11-24
+        with:
+          ref: 21b395c993e2f4f8976a6a90cfbd7fbdd863330f
+          path: site
+          persist-credentials: false
+
+      - name: Verify every payload byte before upload
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          import { createHash } from 'node:crypto';
+          import { lstatSync, readFileSync, readdirSync } from 'node:fs';
+          const root = 'site';
+          const paths = readdirSync(root, { recursive: true })
+            .filter(p => p !== '.git' && !p.startsWith('.git/'))
+            .filter(p => {
+              const s = lstatSync(`${root}/${p}`);
+              assert(!s.isSymbolicLink(), `Unsupported symbolic link: ${p}`);
+              assert(s.isFile() || s.isDirectory(), `Unsupported entry: ${p}`);
+              return s.isFile();
+            }).sort();
+          assert(!paths.some(p => p === '.github' || p.startsWith('.github/')),
+            'Frozen payload unexpectedly contains workflow metadata');
+          assert.equal(readFileSync(`${root}/deployment.txt`, 'utf8').trim(),
+            '6c49fc4f6c2527429f60d769b0fb222de4b6bd54');
+          assert.equal(readFileSync(`${root}/CNAME`, 'utf8').trim(), 'th3rdgroup.com');
+          assert(paths.includes('index.html') && paths.includes('.nojekyll'));
+          const payload = paths.filter(p => p !== 'deployment.txt');
+          assert.equal(payload.length, 280);
+          const digest = createHash('sha256');
+          for (const p of payload) {
+            digest.update(p).update('\0').update(readFileSync(`${root}/${p}`)).update('\0');
+          }
+          assert.equal(digest.digest('hex'),
+            '4af89b8ea54afda2862ece40477976b558034863d9329d0dbbc7d27a4e5c1427');
+          console.log('PASS: 280 frozen files, application marker and domain match');
+          NODE
+
+      - name: Read the existing Pages configuration
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+        with:
+          enablement: false
+
+      - name: Package the verified static files without rebuilding
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: site
+          retention-days: 1
+
+      - name: Publish to the existing GitHub Pages site
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
