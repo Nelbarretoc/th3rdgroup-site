@@ -1,6 +1,6 @@
-# One-off recovery of the VPS-tested TH3RD artifact; owner authorized continuation.
+# Publish the VPS-tested TH3RD growth artifact without rebuilding it.
 # Manual dispatch only. No rebuild, DNS change or new saved credential.
-name: Publish verified TH3RD recovery artifact
+name: Publish verified TH3RD growth artifact
 
 on:
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
       - name: Check out the exact VPS-tested static artifact
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, checked 2026-11-24
         with:
-          ref: 21b395c993e2f4f8976a6a90cfbd7fbdd863330f
+          ref: d39f761bdb76e5b7d68e737a7d4c2aa888f14fac
           path: site
           persist-credentials: false
 
@@ -51,18 +51,18 @@ jobs:
           assert(!paths.some(p => p === '.github' || p.startsWith('.github/')),
             'Frozen payload unexpectedly contains workflow metadata');
           assert.equal(readFileSync(`${root}/deployment.txt`, 'utf8').trim(),
-            '6c49fc4f6c2527429f60d769b0fb222de4b6bd54');
+            '00a3ac9755ce55dd953d73e00a388d3136368311');
           assert.equal(readFileSync(`${root}/CNAME`, 'utf8').trim(), 'th3rdgroup.com');
           assert(paths.includes('index.html') && paths.includes('.nojekyll'));
           const payload = paths.filter(p => p !== 'deployment.txt');
-          assert.equal(payload.length, 280);
+          assert.equal(payload.length, 284);
           const digest = createHash('sha256');
           for (const p of payload) {
             digest.update(p).update('\0').update(readFileSync(`${root}/${p}`)).update('\0');
           }
           assert.equal(digest.digest('hex'),
-            '4af89b8ea54afda2862ece40477976b558034863d9329d0dbbc7d27a4e5c1427');
-          console.log('PASS: 280 frozen files, application marker and domain match');
+            '5dd73b33780c3a01f7da196b24c17becad1a9968d0a476d3c6a4612f7efe1514');
+          console.log('PASS: 284 frozen files, application marker and domain match');
           NODE
 
       - name: Read the existing Pages configuration
