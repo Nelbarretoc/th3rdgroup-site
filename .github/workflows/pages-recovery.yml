@@ -1,6 +1,6 @@
-# Publish the VPS-tested TH3RD Mayra case artifact without rebuilding it.
+# Publish the VPS-tested TH3RD Mayra homepage shortcut artifact without rebuilding it.
 # Manual dispatch only. No rebuild, DNS change or new saved credential.
-name: Publish verified TH3RD Mayra case artifact
+name: Publish verified TH3RD Mayra homepage shortcuts
 
 on:
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
       - name: Check out the exact VPS-tested static artifact
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, checked 2026-11-24
         with:
-          ref: 3c7e8899ceef6228b6eb1a7617fe064e1a47420e
+          ref: 8af7fdc3667e91a4e7a3bafd9d6c7902af092793
           path: site
           persist-credentials: false
 
@@ -51,7 +51,7 @@ jobs:
           assert(!paths.some(p => p === '.github' || p.startsWith('.github/')),
             'Frozen payload unexpectedly contains workflow metadata');
           assert.equal(readFileSync(`${root}/deployment.txt`, 'utf8').trim(),
-            '37541dc11ca41e260f88740ba3780c96c8b6c336');
+            '3098fd9a1291a3ced441bf2060b3b22fb843f277');
           assert.equal(readFileSync(`${root}/CNAME`, 'utf8').trim(), 'th3rdgroup.com');
           assert(paths.includes('index.html') && paths.includes('.nojekyll'));
           const payload = paths.filter(p => p !== 'deployment.txt');
@@ -61,7 +61,7 @@ jobs:
             digest.update(p).update('\0').update(readFileSync(`${root}/${p}`)).update('\0');
           }
           assert.equal(digest.digest('hex'),
-            '35663efeb181fb016e3697959d4d17a4228e4c5b9ea8d980d65881d2172d323f');
+            '2db1f91bf7ee57b46cc4508a1a8a6ef2a21c26f070c3e9dc1bcfb1d0a9e54576');
           console.log('PASS: 292 frozen files, application marker and domain match');
           NODE
 
